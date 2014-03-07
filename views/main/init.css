@@ -1,0 +1,113 @@
+
+table:not(.layout_table).device_list td.enabled {
+    background: #007E05 linear-gradient(#07A714, #007E05);
+    
+}
+
+@-moz-keyframes blink { 
+    from { background: #A70707 ; color: #FFF; } 
+    to { background: #F5F5F5 ; color: #3F3F3F; }
+}
+@-webkit-keyframes blink { 
+    from { background: #A70707 ; color: #FFF; } 
+    to { background: #F5F5F5 ; color: #3F3F3F; }
+}
+@-o-keyframes blink { 
+    from { background: #A70707 ; color: #FFF; } 
+    to { background: #F5F5F5 ; color: #3F3F3F; }
+}
+@-ms-keyframes blink { 
+    from { background: #A70707 ; color: #FFF; } 
+    to { background: #F5F5F5 ; color: #3F3F3F; }
+}
+@keyframes blink { 
+    from { background: #A70707 ; color: #FFF; } 
+    to { background: #F5F5F5 ; color: #3F3F3F; }
+}
+
+table:not(.layout_table).device_list td.disabled {
+    background: #A70707 linear-gradient(#A70707, #7E0000);
+    animation: blink 2s step-end infinite;
+    -moz-animation: blink 2s step-end infinite;
+    -o-animation: blink 2s step-end infinite;
+    -webkit-animation: blink 2s infinite;
+    color: #FFF;
+}
+
+
+.device_list td.enabled .icon-check,
+.device_list td.disabled .icon-cancel,
+.device_list td.invalid .icon-cancel,
+.device_list td.invalid .icon-attention,
+.device_list td.clickable:hover .icon-check {
+    color: #FFF;
+}
+
+.device_list .icon-check {
+    color: #208102;
+}
+
+.device_list .icon-cancel {
+    color: #DD0000;
+}
+
+.modal .form-element .unit {
+    margin-left: 10px;
+}
+
+.remove_pool {
+    margin-left: 10px;
+}
+
+.pool_switching_container {
+    display: block;
+}
+
+.pool_switching_container.hidden {
+    display: none;
+}
+.pool_switching_container label {
+    margin-top: 3px;
+    float: right; 
+    margin-left: 10px;
+}
+.pool_switching_container select {
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    float: right;
+}
+
+.rig {
+    padding: 10px;
+    border: 1px solid #A5A5A5;
+    box-shadow: 0px 0px 15px 0px #BEBEBE;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #EEE9E2;
+}
+
+.rig_btn {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.device_list th {
+    white-space: nowrap;
+}
+
+.rig_hashrate {
+    margin-left: 30px;
+}
+
+.swap_rig {
+    cursor: pointer;
+}
+
+div.rig > div.rig_header {
+    float: left;
+}
+div.rig > div > h2 {
+    display: inline;
+}
